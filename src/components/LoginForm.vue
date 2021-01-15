@@ -41,7 +41,7 @@ export default {
       console.log(id_token);
       axios({
         method: 'POST',
-        url: `http://localhost:3000/googleSignIn`,
+        url: `https://stormy-tor-29734.herokuapp.com//googleSignIn`,
         data: {id_token: id_token}
       }).then(response => {
         console.log(response);

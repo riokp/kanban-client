@@ -102,7 +102,7 @@ export default {
     return {
       clientId: '456969350643-bnlgm95gofpsfi4d3qn0tr9p4b693cje.apps.googleusercontent.com',
       currentPage: "register",
-      baseUrl: "http://localhost:3000",
+      baseUrl: "https://stormy-tor-29734.herokuapp.com/",
       tasks: [],
       backlogTasks: [],
       todoTasks: [],
@@ -192,7 +192,7 @@ export default {
     getAllTask() {
       axios({
         method: 'GET',
-        url: "http://localhost:3000/tasks",
+        url: "https://stormy-tor-29734.herokuapp.com//tasks",
         headers: {
           access_token: localStorage.getItem('access_token')
         }
@@ -267,7 +267,7 @@ export default {
     getOneTask(id) {
       axios ({
         method: 'GET',
-        url: `http://localhost:3000/tasks/${id}`,
+        url: `https://stormy-tor-29734.herokuapp.com//tasks/${id}`,
         headers: {
           access_token: localStorage.getItem('access_token')
         }
@@ -358,7 +358,7 @@ export default {
       console.log(id_token);
       axios({
         method: 'POST',
-        url: `http://localhost:3000/googleSignIn`,
+        url: `https://stormy-tor-29734.herokuapp.com//googleSignIn`,
         data: {id_token: id_token}
       })
       .done(response => {
