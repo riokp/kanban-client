@@ -1,0 +1,44 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "title": "install features",
+      "detail": "install updated features",
+      "category": "backlog",
+      "assign": "Mary",
+      "UserId": 4,
+      "createdAt": "2021-01-13 20:13:55.211+07",
+      "updatedAt": "2021-01-13 20:13:55.211+07"
+    },
+    {
+      "id": 2,
+      "title": "work on v.1",
+      "detail": "first version",
+      "category": "todo",
+      "assign": "Jon Snow",
+      "UserId": 3,
+      "createdAt": "2021-01-13 20:13:55.211+07",
+      "updatedAt": "2021-01-13 20:13:55.211+07"
+    },
+    {
+      "id": 3,
+      "title": "update data",
+      "detail": "update customer data",
+      "category": "doing",
+      "assign": "geralt",
+      "UserId": 2,
+      "createdAt": "2021-01-13 20:13:55.211+07",
+      "updatedAt": "2021-01-13 20:13:55.211+07"
+    },
+    {
+      "id": 4,
+      "title": "drop feature",
+      "detail": "delete unecessarry features",
+      "category": "done",
+      "assign": "Elizabeth",
+      "UserId": 1,
+      "createdAt": "2021-01-13 20:13:55.211+07",
+      "updatedAt": "2021-01-13 20:13:55.211+07"
+    }
+  ]
+}
