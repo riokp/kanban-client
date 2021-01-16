@@ -7,5 +7,3 @@ new Vue({
   GoogleSignInButton,
   render: h => h(App),
 }).$mount('#app');
-
-Vue.use(GSignInButton)

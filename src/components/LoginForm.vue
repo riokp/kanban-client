@@ -13,7 +13,7 @@
           <input v-model="loginData.password" type="password" class="form-control" placeholder="password">
         </div>
         <button type="submit" class="btn btn-primary">Login</button>
-        <button class="btn btn-secondary" @click="switchPage('register')">Cancel</button>
+        <button class="btn btn-secondary" @click.prevent="switchPage('register')">Cancel</button>
       </form>
     </div>
     <button v-google-signin-button="clientId" class="google-signin-button"> Continue with Google</button>
@@ -31,7 +31,7 @@ export default {
   },
   data() {
     return {
-      clientId: '456969350643-bnlgm95gofpsfi4d3qn0tr9p4b693cje.apps.googleusercontent.com'
+      clientId: '896738878495-o85tsaaedg4jgvunib0mun4cdk1c6600.apps.googleusercontent.com'
     }
   },
   methods: {
@@ -41,7 +41,7 @@ export default {
       console.log(id_token);
       axios({
         method: 'POST',
-        url: `https://stormy-tor-29734.herokuapp.com//googleSignIn`,
+        url: `https://stormy-tor-29734.herokuapp.com/googleSignIn`,
         data: {id_token: id_token}
       }).then(response => {
         console.log(response);

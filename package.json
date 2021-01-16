@@ -19,7 +19,6 @@
   "homepage": "https://github.com/riokp/kanban-client#readme",
   "dependencies": {
     "axios": "^0.21.1",
-    "uninstall": "0.0.0",
     "vue": "^2.6.12",
     "vue-google-signin-button": "^1.0.4",
     "vue-google-signin-button-directive": "^1.0.3",
