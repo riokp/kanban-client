@@ -16,7 +16,7 @@
             <div id="passwordHelp" class="form-text">Please input password between 8-20 characters</div>
           </div>
           <button type="submit" class="btn btn-primary">Register</button>
-          <button class="btn btn-secondary" @click="switchPage('login')">Login</button>
+          <button class="btn btn-secondary" @click.prevent="switchPage('login')">Login</button>
           <!-- <button v-google-signin-button="clientId" class="google-signin-button"> Continue with Google</button> -->
         </form>
       </div>

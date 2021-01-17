@@ -31,7 +31,7 @@ export default {
   },
   data() {
     return {
-      clientId: '896738878495-o85tsaaedg4jgvunib0mun4cdk1c6600.apps.googleusercontent.com'
+      clientId: '896738878495-rb0sqn0o90mr5qq8i0bmp558i48qun93.apps.googleusercontent.com'
     }
   },
   methods: {
@@ -41,11 +41,12 @@ export default {
       console.log(id_token);
       axios({
         method: 'POST',
-        url: `https://stormy-tor-29734.herokuapp.com/googleSignIn`,
+        url: `http://localhost:3000/googleSignIn`,
         data: {id_token: id_token}
       }).then(response => {
         console.log(response);
-        localStorage.setItem(`access_token`,response.access_token)
+        localStorage.setItem(`access_token`,response.data.access_token)
+        this.switchPage("home")
       })
     },
     OnGoogleAuthFail (error) {

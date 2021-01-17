@@ -20,7 +20,7 @@
         <br>
         <button class="btn btn-primary" type="submit">Save</button>
         <button class="btn btn-danger" @click="deleteTask(taskDetailData.id)">Delete</button>
-        <a href="#" @click="switchPage('home')" class="btn btn-info">Cancel</a>
+        <a href="#" @click.prevent="switchPage('home')" class="btn btn-info">Cancel</a>
       </div>
     </form>
   </div>

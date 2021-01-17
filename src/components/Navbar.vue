@@ -5,10 +5,10 @@
         <h3>KanbanApp</h3>
       </div>
       <div class="nav-link">
-        <a href="#" v-if="currentPage === 'login'" @click="switchPage('register')">register</a>
-        <a href="#" v-if="currentPage === 'register'" @click="switchPage('login')">log in</a>
-        <a href="#" v-if="currentPage === 'home' || currentPage == 'add'" @click="switchPage('add')">add task</a>
-        <a href="#" v-if="currentPage === 'home' || currentPage == 'add'" @click="logout">logout</a>
+        <a href="#" v-if="currentPage === 'login'" @click.prevent="switchPage('register')">register</a>
+        <a href="#" v-if="currentPage === 'register'" @click.prevent="switchPage('login')">log in</a>
+        <a href="#" v-if="currentPage === 'home' || currentPage == 'add'" @click.prevent="switchPage('add')">add task</a>
+        <a href="#" v-if="currentPage === 'home' || currentPage == 'add'" @click.prevent="logout">logout</a>
       </div>
     </nav>
   

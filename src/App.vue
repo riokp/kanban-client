@@ -100,9 +100,9 @@ export default {
   },
   data() {
     return {
-      clientId: '896738878495-o85tsaaedg4jgvunib0mun4cdk1c6600.apps.googleusercontent.com',
+      clientId: '896738878495-rb0sqn0o90mr5qq8i0bmp558i48qun93.apps.googleusercontent.com',
       currentPage: "register",
-      baseUrl: "https://stormy-tor-29734.herokuapp.com",
+      baseUrl: "http://localhost:3000",
       tasks: [],
       backlogTasks: [],
       todoTasks: [],
@@ -192,7 +192,7 @@ export default {
     getAllTask() {
       axios({
         method: 'GET',
-        url: "https://stormy-tor-29734.herokuapp.com/tasks",
+        url: "http://localhost:3000/tasks",
         headers: {
           access_token: localStorage.getItem('access_token')
         }
@@ -267,7 +267,7 @@ export default {
     getOneTask(id) {
       axios ({
         method: 'GET',
-        url: `https://stormy-tor-29734.herokuapp.com/tasks/${id}`,
+        url: `http://localhost:3000/tasks/${id}`,
         headers: {
           access_token: localStorage.getItem('access_token')
         }
@@ -351,21 +351,6 @@ export default {
       })
       .err(err => {
         console.log(err);
-      })
-    },
-    onSignIn(googleUser) {
-      const id_token = googleUser.getAuthResponse().id_token;
-      console.log(id_token);
-      axios({
-        method: 'POST',
-        url: `https://stormy-tor-29734.herokuapp.com/googleSignIn`,
-        data: {id_token: id_token}
-      })
-      .done(response => {
-        console.log(response);
-        localStorage.setItem(`access_token`,response.access_token)
-      })
-      .fail((xhr,status) => {
       })
     }
   },

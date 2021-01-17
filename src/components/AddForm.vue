@@ -16,7 +16,7 @@
       </div>
       <small id="emailHelp" class="form-text text-muted">all newly created tasks will be automatically logged as a backlog</small><br><br>
       <button type="submit" class="btn btn-primary">Add</button>
-      <button @click="switchPage('home')" class="btn btn-info ">Cancel</button>
+      <button @click.prevent="switchPage('home')" class="btn btn-info ">Cancel</button>
     </form>
   </div>
 

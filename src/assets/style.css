@@ -42,7 +42,7 @@ nav .nav-link a {
 
 }
 .board {
-
+  
 }
 .board-body {
 
@@ -61,7 +61,7 @@ nav .nav-link a {
 }
 
 .red {
-
+  width: 286px;
   background-color: rgb(170, 51, 51);
   border-style:solid;
   border-width: 0.1;
@@ -70,6 +70,7 @@ nav .nav-link a {
   margin: 20px 0;
 }
 .blue {
+  width: 286px;
   background-color: rgb(51, 93, 209);
   border-style:solid;
   border-width: 0.1;
@@ -78,6 +79,7 @@ nav .nav-link a {
   margin: 20px 0;
 }
 .green {
+  width: 286px;
   background-color: rgb(43, 194, 106);
   border-style:solid;
   border-width: 0.1;
@@ -86,6 +88,7 @@ nav .nav-link a {
   margin: 20px 0;
 }
 .yellow {
+  width: 286px;
   background-color: rgb(209, 171, 0);
   border-style:solid;
   border-width: 0.1;
