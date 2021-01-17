@@ -102,7 +102,7 @@ export default {
     return {
       clientId: '896738878495-rb0sqn0o90mr5qq8i0bmp558i48qun93.apps.googleusercontent.com',
       currentPage: "register",
-      baseUrl: "http://localhost:3000",
+      baseUrl: "https://stormy-tor-29734.herokuapp.com",
       tasks: [],
       backlogTasks: [],
       todoTasks: [],
@@ -192,7 +192,7 @@ export default {
     getAllTask() {
       axios({
         method: 'GET',
-        url: "http://localhost:3000/tasks",
+        url: "https://stormy-tor-29734.herokuapp.com/tasks",
         headers: {
           access_token: localStorage.getItem('access_token')
         }
@@ -267,7 +267,7 @@ export default {
     getOneTask(id) {
       axios ({
         method: 'GET',
-        url: `http://localhost:3000/tasks/${id}`,
+        url: `https://stormy-tor-29734.herokuapp.com/tasks/${id}`,
         headers: {
           access_token: localStorage.getItem('access_token')
         }
